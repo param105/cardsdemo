@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/reload"
+        android:title="@string/reload"
+        />
+
+    <item
+        android:id="@+id/add_spot_to_first"
+        android:title="@string/favourites"
+        />
+
+
+</menu>

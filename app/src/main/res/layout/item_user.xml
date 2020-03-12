@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/coverRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/gray"
+
+        />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/itemImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/ic_launcher"
+        app:riv_corner_radius="100dp"
+        app:riv_border_width="3dp"
+        app:riv_border_color="#FFFF00"
+        android:padding="5dp"
+
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/coverRelativeLayout">
+
+        <TextView
+            android:id="@+id/userPropertyTextView"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="My name is"
+            android:textSize="16sp"
+            android:lines="1"
+            />
+
+        <TextView
+            android:id="@+id/userPropertyValueTextView"
+            android:layout_below="@+id/userPropertyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Arshad"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:lines="1"
+            />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomView"
+            android:layout_below="@+id/userPropertyValueTextView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            app:menu="@menu/navigation"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
