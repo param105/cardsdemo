@@ -10,13 +10,8 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 @Entity(tableName = "fav_table")
-data class Users (
-
-
-    @PrimaryKey(autoGenerate = true)
-    val uid: Int,
+data class FavUsers (
+    @PrimaryKey(autoGenerate = true) @ColumnInfo(name = "id") val uid: Int,
     @ColumnInfo(name = "first_name") val firstName: String?,
     @ColumnInfo(name = "address") val address: String?,
     @ColumnInfo(name = "image") val imageUrl: String?):Parcelable
-
-

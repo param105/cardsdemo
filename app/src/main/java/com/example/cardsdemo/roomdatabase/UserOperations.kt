@@ -4,16 +4,16 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.example.cardsdemo.roomdatabase.Users
+import com.example.cardsdemo.roomdatabase.FavUsers
 
 @Dao
 interface UserOperations {
 
     @Query("SELECT * FROM fav_table")
-    fun getAll(): List<Users>
+    fun getAll(): List<FavUsers>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertAll(vararg users: Array<out Any?>)
+    fun insert(users: FavUsers)
 
 
 }
